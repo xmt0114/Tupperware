@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xiaomutian.tupperwareproductbrowser.SelectOprationsActivity">
+
+    <Button
+        android:id="@+id/button_browse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="浏览模式" />
+
+    <Button
+        android:id="@+id/button_practice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="练习模式" />
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="编辑模式" />
+
+    <Button
+        android:id="@+id/button_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照添加" />
+
+    <Button
+        android:id="@+id/button_from_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从相册添加" />
+
+    <ImageView
+        android:id="@+id/image_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
