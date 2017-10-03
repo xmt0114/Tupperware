@@ -1,8 +1,6 @@
-package com.example.xiaomutian.tupperwareproductbrowser;
+package com.example.xiaomutian.tupperwareproductbrowser.Activity;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.MediaStore;
@@ -14,8 +12,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.xiaomutian.tupperwareproductbrowser.R;
+
+import org.litepal.LitePal;
+
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class SelectOprationsActivity extends AppCompatActivity {
@@ -39,6 +40,9 @@ public class SelectOprationsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.select_oprations_activity);
+
+        // init dabase
+        LitePal.getDatabase();
 
         m_bnBrowseMode = (Button)findViewById(R.id.button_browse);
         m_bnPracticeMode = (Button)findViewById(R.id.button_practice);

@@ -1,4 +1,4 @@
-package com.example.xiaomutian.tupperwareproductbrowser;
+package com.example.xiaomutian.tupperwareproductbrowser.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +12,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
+
+import com.example.xiaomutian.tupperwareproductbrowser.DataManager.ProdectItem;
+import com.example.xiaomutian.tupperwareproductbrowser.R;
 
 import java.io.FileNotFoundException;
 
@@ -51,7 +53,10 @@ public class EditActivity extends AppCompatActivity {
         m_btCommit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ProdectItem item = new ProdectItem();
+                item.setProductName(m_etName.getText().toString());
+                item.setPrice(Double.parseDouble(m_etPrice.getText().toString()));
+                item.setDesp(m_etDescription.getText().toString());
             }
         });
 
